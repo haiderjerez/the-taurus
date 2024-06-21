@@ -1,0 +1,168 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'playfair', sans-serif;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 4fr ;
+    grid-template-rows:  1fr;
+    column-gap: 3%;
+    border: 9px solid;
+    border-radius: 10px;
+    height: 100vh;
+    max-height: 1200px;
+}
+.menu{
+    background-color: #b0957f;
+}
+.main{
+    background-color: #b0957f;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.logo{
+    width: 75px;
+    height: 100px;
+}
+.img-logo{
+    width: 120px;
+    height: 120px;
+    margin: 10%;
+}
+.logo:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.nav{
+    display: flex;
+    flex-direction: column;    
+}
+.list{
+    color: rgb(255, 255, 255);
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    display:inline
+}
+.link{
+    padding: 2%;
+    margin: 10%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.link li{
+    color: black;
+    margin: 8px 0;
+    padding: 10px;
+    list-style-type: none;
+    cursor: pointer;
+}
+.link a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight:bold;
+}
+.link:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.carrito{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 10%;
+    padding: 5%;
+    margin-top: 100px;
+}
+.carrito a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    list-style-type: none;
+}
+.carrito:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.credencial{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    list-style-type: none;
+    margin-top: 150px;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+.box1 {
+    background-color: #ff5733;
+    text-align: center;
+}
+.box2 {
+    background-color: #333;
+}
+.img{
+    width: 60%;
+    height: 70%;
+}
+.box:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.button{
+    text-align: center;
+}
+.buy-button{
+    background-color: #b0957f;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.buy-button:hover{
+    background-color: #b0957f;
+    transform: scale(1.05);
+}
+.buy-button:active{
+    background-color: aquamarine;
+    transform: scale(0.95);
+}
+@font-face {
+    font-family: playfair;
+    src: url(imagenes/logo/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+    src: url(imagenes/logo/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@media (max-width: 850px) {
+    .grid{
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+    .main{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+}
